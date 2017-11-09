@@ -53,7 +53,7 @@
 #include "spi.h"
 #include "usart.h"
 #include "gpio.h"
-
+#include "en25qxx.h"
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
@@ -80,35 +80,20 @@ void SystemClock_Config(void);
 int main(void)
 {
 
-  /* USER CODE BEGIN 1 */
-
-  /* USER CODE END 1 */
-
-  /* MCU Configuration----------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
 
-  /* USER CODE BEGIN Init */
-
-  /* USER CODE END Init */
-
   /* Configure the system clock */
   SystemClock_Config();
 
-  /* USER CODE BEGIN SysInit */
-
-  /* USER CODE END SysInit */
-
   /* Initialize all configured peripherals */
-  MX_GPIO_Init();
   MX_UART4_Init();
-  MX_SPI1_Init();
-  MX_FATFS_Init();
+  //MX_FATFS_Init();
+  EN25QXX_Init();
 
-  /* USER CODE BEGIN 2 */
-
-  /* USER CODE END 2 */
+  printf("This is system startup.\r\n");
+  
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */

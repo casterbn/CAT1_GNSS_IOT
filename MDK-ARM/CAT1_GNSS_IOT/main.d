@@ -29,6 +29,16 @@ cat1_gnss_iot\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 cat1_gnss_iot\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 cat1_gnss_iot\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
 cat1_gnss_iot\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+cat1_gnss_iot\main.o: ../Inc/fatfs.h
+cat1_gnss_iot\main.o: ../Middlewares/Third_Party/FatFs/src/ff.h
+cat1_gnss_iot\main.o: ../Middlewares/Third_Party/FatFs/src/integer.h
+cat1_gnss_iot\main.o: ../Inc/ffconf.h
+cat1_gnss_iot\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+cat1_gnss_iot\main.o: ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h
+cat1_gnss_iot\main.o: ../Middlewares/Third_Party/FatFs/src/diskio.h
+cat1_gnss_iot\main.o: ../Inc/user_diskio.h
 cat1_gnss_iot\main.o: ../Inc/spi.h
 cat1_gnss_iot\main.o: ../Inc/usart.h
 cat1_gnss_iot\main.o: ../Inc/gpio.h
+cat1_gnss_iot\main.o: ../Inc/en25qxx.h
+cat1_gnss_iot\main.o: ../Inc/common.h

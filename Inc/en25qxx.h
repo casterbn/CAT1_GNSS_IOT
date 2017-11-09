@@ -1,20 +1,8 @@
 #ifndef __EN25QXX_H
-#define __EN25QXX_H			    
-#include "sys.h"  
-//////////////////////////////////////////////////////////////////////////////////	 
-//本程序只供学习使用，未经作者许可，不得用于其它任何用途
-//ALIENTEK STM32F407开发板
-//EN25QXX 驱动代码	   
-//正点原子@ALIENTEK
-//技术论坛:www.openedv.com
-//创建日期:2014/5/6
-//版本：V1.0
-//版权所有，盗版必究。
-//Copyright(C) 广州市星翼电子科技有限公司 2014-2024
-//All rights reserved									  
-////////////////////////////////////////////////////////////////////////////////// 
+#define __EN25QXX_H			   
+#include "stm32f4xx_hal.h"
+#include "common.h"
 
-//W25X系列/Q系列芯片列表	   
 //EN25Q80  ID  0XEF13
 //EN25Q16  ID  0XEF14
 //EN25Q32  ID  0XEF15

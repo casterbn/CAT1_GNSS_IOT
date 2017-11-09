@@ -5,6 +5,9 @@
 "cat1_gnss_iot\gpio.o"
 "cat1_gnss_iot\main.o"
 "cat1_gnss_iot\stm32f4xx_it.o"
+"cat1_gnss_iot\fatfs.o"
+"cat1_gnss_iot\user_diskio.o"
+"cat1_gnss_iot\en25qxx.o"
 "cat1_gnss_iot\stm32f4xx_hal_spi.o"
 "cat1_gnss_iot\stm32f4xx_hal_dma_ex.o"
 "cat1_gnss_iot\stm32f4xx_hal_cortex.o"
@@ -23,6 +26,10 @@
 "cat1_gnss_iot\stm32f4xx_hal_pwr_ex.o"
 "cat1_gnss_iot\system_stm32f4xx.o"
 "cat1_gnss_iot\startup_stm32f407xx.o"
+"cat1_gnss_iot\syscall.o"
+"cat1_gnss_iot\diskio.o"
+"cat1_gnss_iot\ff_gen_drv.o"
+"cat1_gnss_iot\ff.o"
 --library_type=microlib --strict --scatter "CAT1_GNSS_IOT\CAT1_GNSS_IOT.sct"
 
 --diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols

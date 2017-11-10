@@ -8,11 +8,7 @@
 //EN25Q32  ID  0XEF15
 //EN25Q64  ID  0XEF16	
 //EN25Q128 ID  0XEF17	
-#define EN25Q80 	0XEF13 	
-#define EN25Q16 	0XEF14
-#define EN25Q32 	0XEF15
-#define EN25Q64 	0XEF16
-#define EN25Q128	0XEF17
+#define EN25Q80B	0XEF17
 
 extern uint16_t EN25QXX_TYPE;					//∂®“ÂEN25QXX–æ∆¨–Õ∫≈		   
 

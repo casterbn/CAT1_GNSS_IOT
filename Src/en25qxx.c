@@ -1,20 +1,16 @@
 #include "en25qxx.h" 
 #include "spi.h"
 #include "usart.h"	
-//////////////////////////////////////////////////////////////////////////////////	 
-//本程序只供学习使用，未经作者许可，不得用于其它任何用途
-//ALIENTEK STM32F407开发板
-//EN25QXX 驱动代码	   
-//正点原子@ALIENTEK
-//技术论坛:www.openedv.com
-//创建日期:2014/5/6
-//版本：V1.0
-//版权所有，盗版必究。
-//Copyright(C) 广州市星翼电子科技有限公司 2014-2024
-//All rights reserved									  
-////////////////////////////////////////////////////////////////////////////////// 	
+
+#define  EN25Q_DEBUG    1
+
+#if EN25Q_DEBUG
+      #define EN25Q_DBG(format,...)   printf("[EN25Q80B flash DEBUG] %s:%d %s:: "format"\r\n",  __FILE__, __LINE__, __FUNCTION__,##__VA_ARGS__)
+#else
+     #define EN25Q_DBG(format,...)   
+#endif
  
-uint16_t EN25QXX_TYPE=EN25Q128;	//默认是EN25Q128
+uint16_t EN25QXX_TYPE=EN25Q80B;	//默认是EN25Q128
 
 //4Kbytes为一个Sector
 //16个扇区为1个Block
@@ -35,7 +31,8 @@ void EN25QXX_Init(void)
     MX_SPI1_Init();
 
     //read flash chipset ID
-    //EN25QXX_TYPE=EN25QXX_ReadID();
+    EN25QXX_TYPE=EN25QXX_ReadID();
+    EN25Q_DBG("EN25QXX_TYPE=%x", EN25QXX_TYPE);
 }  
 
 //读取EN25QXX的状态寄存器

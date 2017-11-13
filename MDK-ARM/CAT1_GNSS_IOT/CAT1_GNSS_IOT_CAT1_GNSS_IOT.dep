@@ -1,9 +1,9 @@
 Dependencies for Project 'CAT1_GNSS_IOT', Target 'CAT1_GNSS_IOT': (DO NOT MODIFY !)
-F (../Src/usart.c)(0x5A02BCD8)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\usart.o --omf_browse cat1_gnss_iot\usart.crf --depend cat1_gnss_iot\usart.d)
-I (../Inc/usart.h)(0x5A02BCD8)
+F (../Src/usart.c)(0x5A093FBF)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\usart.o --omf_browse cat1_gnss_iot\usart.crf --depend cat1_gnss_iot\usart.d)
+I (../Inc/usart.h)(0x5A093FBF)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -30,12 +30,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A01277B)
-I (../Inc/gpio.h)(0x5A02BCD7)
-F (../Src/spi.c)(0x5A03ED77)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\spi.o --omf_browse cat1_gnss_iot\spi.crf --depend cat1_gnss_iot\spi.d)
-I (../Inc/spi.h)(0x5A02BCD8)
+I (../Inc/gpio.h)(0x5A093FBE)
+F (../Src/spi.c)(0x5A096509)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\spi.o --omf_browse cat1_gnss_iot\spi.crf --depend cat1_gnss_iot\spi.d)
+I (../Inc/spi.h)(0x5A093FBF)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -62,11 +62,11 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A01277B)
-I (../Inc/gpio.h)(0x5A02BCD7)
-F (../Src/stm32f4xx_hal_msp.c)(0x5A02BCD9)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\stm32f4xx_hal_msp.o --omf_browse cat1_gnss_iot\stm32f4xx_hal_msp.crf --depend cat1_gnss_iot\stm32f4xx_hal_msp.d)
+I (../Inc/gpio.h)(0x5A093FBE)
+F (../Src/stm32f4xx_hal_msp.c)(0x5A093FBF)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\stm32f4xx_hal_msp.o --omf_browse cat1_gnss_iot\stm32f4xx_hal_msp.crf --depend cat1_gnss_iot\stm32f4xx_hal_msp.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -93,11 +93,11 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A01277B)
-F (../Src/gpio.c)(0x5A02BCD7)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\gpio.o --omf_browse cat1_gnss_iot\gpio.crf --depend cat1_gnss_iot\gpio.d)
-I (../Inc/gpio.h)(0x5A02BCD7)
+F (../Src/gpio.c)(0x5A093FBE)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\gpio.o --omf_browse cat1_gnss_iot\gpio.crf --depend cat1_gnss_iot\gpio.d)
+I (../Inc/gpio.h)(0x5A093FBE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -124,10 +124,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A01277B)
-F (../Src/main.c)(0x5A03F05E)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\main.o --omf_browse cat1_gnss_iot\main.crf --depend cat1_gnss_iot\main.d)
-I (../Inc/main.h)(0x5A02BCD9)
+F (../Src/main.c)(0x5A095D21)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\main.o --omf_browse cat1_gnss_iot\main.crf --depend cat1_gnss_iot\main.d)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -154,23 +154,21 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A01277B)
-I (../Inc/fatfs.h)(0x5A02BCD8)
+I (../Inc/fatfs.h)(0x5A093FBF)
 I (../Middlewares/Third_Party/FatFs/src/ff.h)(0x5A01277E)
 I (../Middlewares/Third_Party/FatFs/src/integer.h)(0x5A01277E)
-I (../Inc/ffconf.h)(0x5A02BCD8)
+I (../Inc/ffconf.h)(0x5A093FBE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5475F300)
 I (../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h)(0x5A01277E)
 I (../Middlewares/Third_Party/FatFs/src/diskio.h)(0x5A01277E)
-I (../Inc/user_diskio.h)(0x5A02BCD8)
-I (../Inc/spi.h)(0x5A02BCD8)
-I (../Inc/usart.h)(0x5A02BCD8)
-I (../Inc/gpio.h)(0x5A02BCD7)
-I (../Inc/en25qxx.h)(0x5A0417C3)
-I (../Inc/common.h)(0x5A04148A)
-F (../Src/stm32f4xx_it.c)(0x5A02BCD9)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\stm32f4xx_it.o --omf_browse cat1_gnss_iot\stm32f4xx_it.crf --depend cat1_gnss_iot\stm32f4xx_it.d)
+I (../Inc/user_diskio.h)(0x5A093FBF)
+I (../Inc/spi.h)(0x5A093FBF)
+I (../Inc/usart.h)(0x5A093FBF)
+I (../Inc/gpio.h)(0x5A093FBE)
+F (../Src/stm32f4xx_it.c)(0x5A093FBF)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\stm32f4xx_it.o --omf_browse cat1_gnss_iot\stm32f4xx_it.crf --depend cat1_gnss_iot\stm32f4xx_it.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -197,15 +195,15 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A01277B)
-I (../Inc/stm32f4xx_it.h)(0x5A02BCD9)
-F (../Src/fatfs.c)(0x5A02BCD8)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\fatfs.o --omf_browse cat1_gnss_iot\fatfs.crf --depend cat1_gnss_iot\fatfs.d)
-I (../Inc/fatfs.h)(0x5A02BCD8)
+I (../Inc/stm32f4xx_it.h)(0x5A093FBF)
+F (../Src/fatfs.c)(0x5A093FBF)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\fatfs.o --omf_browse cat1_gnss_iot\fatfs.crf --depend cat1_gnss_iot\fatfs.d)
+I (../Inc/fatfs.h)(0x5A093FBF)
 I (../Middlewares/Third_Party/FatFs/src/ff.h)(0x5A01277E)
 I (../Middlewares/Third_Party/FatFs/src/integer.h)(0x5A01277E)
-I (../Inc/ffconf.h)(0x5A02BCD8)
+I (../Inc/ffconf.h)(0x5A093FBE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -235,17 +233,17 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A01277B)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5475F300)
 I (../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h)(0x5A01277E)
 I (../Middlewares/Third_Party/FatFs/src/diskio.h)(0x5A01277E)
-I (../Inc/user_diskio.h)(0x5A02BCD8)
-F (../Src/user_diskio.c)(0x5A02BCD8)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\user_diskio.o --omf_browse cat1_gnss_iot\user_diskio.crf --depend cat1_gnss_iot\user_diskio.d)
+I (../Inc/user_diskio.h)(0x5A093FBF)
+F (../Src/user_diskio.c)(0x5A093FBF)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\user_diskio.o --omf_browse cat1_gnss_iot\user_diskio.crf --depend cat1_gnss_iot\user_diskio.d)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
 I (../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h)(0x5A01277E)
 I (../Middlewares/Third_Party/FatFs/src/diskio.h)(0x5A01277E)
 I (../Middlewares/Third_Party/FatFs/src/integer.h)(0x5A01277E)
 I (../Middlewares/Third_Party/FatFs/src/ff.h)(0x5A01277E)
-I (../Inc/ffconf.h)(0x5A02BCD8)
+I (../Inc/ffconf.h)(0x5A093FBE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -273,11 +271,11 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A01277B)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-F (..\Src\en25qxx.c)(0x5A041F6D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\en25qxx.o --omf_browse cat1_gnss_iot\en25qxx.crf --depend cat1_gnss_iot\en25qxx.d)
-I (../Inc/en25qxx.h)(0x5A0417C3)
+F (..\Src\en25qxx.c)(0x5A09652A)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\en25qxx.o --omf_browse cat1_gnss_iot\en25qxx.crf --depend cat1_gnss_iot\en25qxx.d)
+I (../Inc/en25qxx.h)(0x5A093AD9)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -304,13 +302,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A01277B)
-I (../Inc/common.h)(0x5A04148A)
-I (../Inc/spi.h)(0x5A02BCD8)
-I (../Inc/usart.h)(0x5A02BCD8)
+I (../Inc/common.h)(0x5A0939EE)
+I (../Inc/spi.h)(0x5A093FBF)
+I (../Inc/usart.h)(0x5A093FBF)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c)(0x5A01277B)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\stm32f4xx_hal_spi.o --omf_browse cat1_gnss_iot\stm32f4xx_hal_spi.crf --depend cat1_gnss_iot\stm32f4xx_hal_spi.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -339,8 +337,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A01277B)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c)(0x5A01277B)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\stm32f4xx_hal_dma_ex.o --omf_browse cat1_gnss_iot\stm32f4xx_hal_dma_ex.crf --depend cat1_gnss_iot\stm32f4xx_hal_dma_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -369,8 +367,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A01277B)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c)(0x5A01277B)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\stm32f4xx_hal_cortex.o --omf_browse cat1_gnss_iot\stm32f4xx_hal_cortex.crf --depend cat1_gnss_iot\stm32f4xx_hal_cortex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -399,8 +397,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A01277B)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c)(0x5A01277B)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\stm32f4xx_hal_flash_ramfunc.o --omf_browse cat1_gnss_iot\stm32f4xx_hal_flash_ramfunc.crf --depend cat1_gnss_iot\stm32f4xx_hal_flash_ramfunc.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -429,8 +427,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A01277B)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c)(0x5A01277B)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\stm32f4xx_hal_gpio.o --omf_browse cat1_gnss_iot\stm32f4xx_hal_gpio.crf --depend cat1_gnss_iot\stm32f4xx_hal_gpio.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -459,8 +457,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A01277B)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c)(0x5A01277B)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\stm32f4xx_hal_rcc.o --omf_browse cat1_gnss_iot\stm32f4xx_hal_rcc.crf --depend cat1_gnss_iot\stm32f4xx_hal_rcc.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -489,8 +487,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A01277B)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c)(0x5A01277B)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\stm32f4xx_hal.o --omf_browse cat1_gnss_iot\stm32f4xx_hal.crf --depend cat1_gnss_iot\stm32f4xx_hal.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -519,8 +517,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A01277B)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c)(0x5A01277B)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\stm32f4xx_hal_pwr.o --omf_browse cat1_gnss_iot\stm32f4xx_hal_pwr.crf --depend cat1_gnss_iot\stm32f4xx_hal_pwr.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -549,8 +547,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A01277B)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c)(0x5A01277B)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\stm32f4xx_hal_tim_ex.o --omf_browse cat1_gnss_iot\stm32f4xx_hal_tim_ex.crf --depend cat1_gnss_iot\stm32f4xx_hal_tim_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -579,8 +577,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A01277B)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c)(0x5A01277B)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\stm32f4xx_hal_rcc_ex.o --omf_browse cat1_gnss_iot\stm32f4xx_hal_rcc_ex.crf --depend cat1_gnss_iot\stm32f4xx_hal_rcc_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -609,8 +607,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A01277B)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c)(0x5A01277B)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\stm32f4xx_hal_dma.o --omf_browse cat1_gnss_iot\stm32f4xx_hal_dma.crf --depend cat1_gnss_iot\stm32f4xx_hal_dma.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -639,8 +637,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A01277B)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c)(0x5A01277B)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\stm32f4xx_hal_flash.o --omf_browse cat1_gnss_iot\stm32f4xx_hal_flash.crf --depend cat1_gnss_iot\stm32f4xx_hal_flash.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -669,8 +667,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A01277B)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c)(0x5A01277B)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\stm32f4xx_hal_tim.o --omf_browse cat1_gnss_iot\stm32f4xx_hal_tim.crf --depend cat1_gnss_iot\stm32f4xx_hal_tim.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -699,8 +697,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A01277B)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c)(0x5A01277B)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\stm32f4xx_hal_flash_ex.o --omf_browse cat1_gnss_iot\stm32f4xx_hal_flash_ex.crf --depend cat1_gnss_iot\stm32f4xx_hal_flash_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -729,8 +727,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A01277B)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c)(0x5A01277B)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\stm32f4xx_hal_uart.o --omf_browse cat1_gnss_iot\stm32f4xx_hal_uart.crf --depend cat1_gnss_iot\stm32f4xx_hal_uart.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -759,8 +757,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A01277B)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c)(0x5A01277B)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\stm32f4xx_hal_pwr_ex.o --omf_browse cat1_gnss_iot\stm32f4xx_hal_pwr_ex.crf --depend cat1_gnss_iot\stm32f4xx_hal_pwr_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -798,8 +796,8 @@ I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5A01277A)
 I (../Drivers/CMSIS/Include/core_cmSimd.h)(0x5A01277A)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5A012779)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5A01277B)
@@ -817,14 +815,14 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A01277B)
-F (startup_stm32f407xx.s)(0x5A02BCDC)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0--pd "__UVISION_VERSION SETA 514" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1"--list startup_stm32f407xx.lst --xref -o cat1_gnss_iot\startup_stm32f407xx.o --depend cat1_gnss_iot\startup_stm32f407xx.d)
+F (startup_stm32f407xx.s)(0x5A093FC3)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0--pd "__UVISION_VERSION SETA 514" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1"--list startup_stm32f407xx.lst --xref -o cat1_gnss_iot\startup_stm32f407xx.o --depend cat1_gnss_iot\startup_stm32f407xx.d)
 F (../Middlewares/Third_Party/FatFs/src/option/syscall.c)(0x5A01277E)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\syscall.o --omf_browse cat1_gnss_iot\syscall.crf --depend cat1_gnss_iot\syscall.d)
 I (../Middlewares/Third_Party/FatFs/src/option/../ff.h)(0x5A01277E)
 I (../Middlewares/Third_Party/FatFs/src/option/../integer.h)(0x5A01277E)
-I (../Inc/ffconf.h)(0x5A02BCD8)
+I (../Inc/ffconf.h)(0x5A093FBE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -857,10 +855,10 @@ I (../Middlewares/Third_Party/FatFs/src/diskio.h)(0x5A01277E)
 I (../Middlewares/Third_Party/FatFs/src/integer.h)(0x5A01277E)
 I (../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h)(0x5A01277E)
 I (../Middlewares/Third_Party/FatFs/src/ff.h)(0x5A01277E)
-I (../Inc/ffconf.h)(0x5A02BCD8)
+I (../Inc/ffconf.h)(0x5A093FBE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -893,10 +891,10 @@ I (../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h)(0x5A01277E)
 I (../Middlewares/Third_Party/FatFs/src/diskio.h)(0x5A01277E)
 I (../Middlewares/Third_Party/FatFs/src/integer.h)(0x5A01277E)
 I (../Middlewares/Third_Party/FatFs/src/ff.h)(0x5A01277E)
-I (../Inc/ffconf.h)(0x5A02BCD8)
+I (../Inc/ffconf.h)(0x5A093FBE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)
@@ -927,10 +925,10 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5475F300)
 F (../Middlewares/Third_Party/FatFs/src/ff.c)(0x5A01277E)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FatFs/src --C99-I D:\ripple\keiluVision_workspace\CAT1_GNSS_IOT\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o cat1_gnss_iot\ff.o --omf_browse cat1_gnss_iot\ff.crf --depend cat1_gnss_iot\ff.d)
 I (../Middlewares/Third_Party/FatFs/src/ff.h)(0x5A01277E)
 I (../Middlewares/Third_Party/FatFs/src/integer.h)(0x5A01277E)
-I (../Inc/ffconf.h)(0x5A02BCD8)
+I (../Inc/ffconf.h)(0x5A093FBE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A01277B)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5A02BCD9)
-I (../Inc/main.h)(0x5A02BCD9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5A093FC0)
+I (../Inc/main.h)(0x5A093FC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A01277B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A01277B)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A012779)

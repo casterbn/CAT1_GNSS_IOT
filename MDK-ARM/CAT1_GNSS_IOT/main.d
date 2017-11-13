@@ -40,5 +40,3 @@ cat1_gnss_iot\main.o: ../Inc/user_diskio.h
 cat1_gnss_iot\main.o: ../Inc/spi.h
 cat1_gnss_iot\main.o: ../Inc/usart.h
 cat1_gnss_iot\main.o: ../Inc/gpio.h
-cat1_gnss_iot\main.o: ../Inc/en25qxx.h
-cat1_gnss_iot\main.o: ../Inc/common.h

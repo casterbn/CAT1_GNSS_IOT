@@ -55,6 +55,8 @@
 /* USER CODE BEGIN 0 */
 __IO ITStatus SPIRxComplete = RESET;
 __IO ITStatus SPITxComplete = RESET;
+__IO ITStatus SPI_RX_TX_Complete = RESET;
+
 
 /* USER CODE END 0 */
 
@@ -68,10 +70,10 @@ void MX_SPI1_Init(void)
   hspi1.Init.Mode = SPI_MODE_MASTER;
   hspi1.Init.Direction = SPI_DIRECTION_2LINES;
   hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
-  hspi1.Init.CLKPolarity = SPI_POLARITY_HIGH;
-  hspi1.Init.CLKPhase = SPI_PHASE_2EDGE;
+  hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
+  hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
   hspi1.Init.NSS = SPI_NSS_SOFT;
-  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2;      //set SPI clock to 21M, APB2 clock is 42M, and the prescaler is 2
+  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_4;
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
@@ -102,7 +104,7 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef* spiHandle)
     */
     GPIO_InitStruct.Pin = GPIO_PIN_6|GPIO_PIN_5|GPIO_PIN_7;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-    GPIO_InitStruct.Pull = GPIO_PULLUP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
     GPIO_InitStruct.Alternate = GPIO_AF5_SPI1;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
@@ -150,27 +152,44 @@ void HAL_SPI_RxCpltCallback(SPI_HandleTypeDef *hspi)
 }
 
 
-void HAL_SPI_TxRxCpltCallback(SPI_HandleTypeDef *hspi)
+void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef *hspi)
 {
     SPITxComplete = SET;
+
 }
+
+ void HAL_SPI_TxRxCpltCallback(SPI_HandleTypeDef *hspi)
+ {
+     SPI_RX_TX_Complete = SET;
+
+ }
 
 uint8_t SPI1_ReadWriteByte(uint8_t TxData)
 {
-    uint8_t rxByte;
-    
+    uint8_t rxByte=0;
+
+#if 1
+    HAL_SPI_TransmitReceive_IT(&hspi1, (uint8_t*)&TxData, (uint8_t*)&rxByte,1);
+    while( SPI_RX_TX_Complete != SET){}
+    SPI_RX_TX_Complete = RESET;
+#endif
+
+#if 0         
     //send  a byte
      while (SPITxComplete == SET){}
     HAL_SPI_Transmit_IT(&hspi1, (uint8_t*)&TxData, 1);
+    //HAL_SPI_Transmit(&hspi1, (uint8_t*)&TxData, 1,2000);
     // SPI tx wait for transmit done.
     while (SPITxComplete != SET){}
     SPITxComplete = RESET;
- 
+
     //read a byte
     while(SPIRxComplete == SET){}    /*wait for */
     HAL_SPI_Receive_IT(&hspi1, (uint8_t *)&rxByte, 1);
+    //HAL_SPI_Receive(&hspi1, (uint8_t*)&rxByte, 1,2000);
     while(SPIRxComplete != SET){}
     SPIRxComplete = RESET;
+#endif    
     return rxByte; //返回通过SPIx最近接收的数据	
  		    
 }

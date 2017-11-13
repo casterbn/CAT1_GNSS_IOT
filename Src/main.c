@@ -53,7 +53,7 @@
 #include "spi.h"
 #include "usart.h"
 #include "gpio.h"
-#include "en25qxx.h"
+
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
@@ -80,29 +80,58 @@ void SystemClock_Config(void);
 int main(void)
 {
 
+  /* USER CODE BEGIN 1 */
+
+  /* USER CODE END 1 */
+
+  /* MCU Configuration----------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
+
+  /* USER CODE BEGIN Init */
+
+  /* USER CODE END Init */
 
   /* Configure the system clock */
   SystemClock_Config();
 
   /* Initialize all configured peripherals */
+  MX_GPIO_Init();
   MX_UART4_Init();
+  MX_SPI1_Init();
   //MX_FATFS_Init();
+  
+  /* USER CODE BEGIN 2 */
   EN25QXX_Init();
 
-  printf("This is system startup.\r\n");
-  
+  /* USER CODE END 2 */
 
   /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
+  EN25QXX_Write("ripple wang flash test...",0,strlen("ripple wang flash test..."));
+  uint8_t  buff[30];
+  memset(buff, 0, 30);
+  printf("before read buff= %s\r\n", buff);
+  EN25QXX_Read(buff,0,25);
+  printf("buff= %s\r\n", buff);
+
+  EN25QXX_Erase_Chip();
+  memset(buff, 0, 30);
+  printf("before read buff= %s\r\n", buff);
+  EN25QXX_Read(buff,0,25);
+  printf("buff[0]= %x\r\n", buff[0]);
+  printf("buff[1]= %x\r\n", buff[1]);
+  printf("buff[2]= %x\r\n", buff[2]);
+  printf("buff[3]= %x\r\n", buff[3]);
+  printf("buff[4]= %x\r\n", buff[4]);
+  
+
   while (1)
   {
-  /* USER CODE END WHILE */
 
-  /* USER CODE BEGIN 3 */
-
+      printf("111111\r\n");
+      
+      HAL_Delay(3000);
   }
   /* USER CODE END 3 */
 

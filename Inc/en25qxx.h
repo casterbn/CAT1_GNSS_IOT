@@ -12,7 +12,8 @@
 
 extern uint16_t EN25QXX_TYPE;					//定义EN25QXX芯片型号		   
 
-#define	EN25QXX_CS 		PBout(14)  		//EN25QXX的片选信号
+//EN25QXX的片选信号
+#define	EN25QXX_CS(x) 		HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, x)
 
 ////////////////////////////////////////////////////////////////////////////////// 
 //指令表

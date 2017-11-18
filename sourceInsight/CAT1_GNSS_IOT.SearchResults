@@ -1,0 +1,97 @@
+---- BPB Matches (103 in 1 files) ----
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_BytsPerSec		11		/* Sector size [byte] (WORD) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_SecPerClus		13		/* Cluster size [sector] (BYTE) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_RsvdSecCnt		14		/* Size of reserved area [sector] (WORD) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_NumFATs			16		/* Number of FATs (BYTE) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_RootEntCnt		17		/* Size of root directory area for FAT12/16 [entry] (WORD) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_TotSec16		19		/* Volume size (16-bit) [sector] (WORD) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_Media			21		/* Media descriptor byte (BYTE) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_FATSz16			22		/* FAT size (16-bit) [sector] (WORD) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_SecPerTrk		24		/* Track size for int13h [sector] (WORD) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_NumHeads		26		/* Number of heads for int13h (WORD) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_HiddSec			28		/* Volume offset from top of the drive (DWORD) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_TotSec32		32		/* Volume size (32-bit) [sector] (DWORD) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_FATSz32			36		/* FAT32: FAT size [sector] (DWORD) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_ExtFlags32		40		/* FAT32: Extended flags (WORD) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_FSVer32			42		/* FAT32: File system version (WORD) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_RootClus32		44		/* FAT32: Root directory cluster (DWORD) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_FSInfo32		48		/* FAT32: Offset of FSINFO sector (WORD) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_BkBootSec32		50		/* FAT32: Offset of backup boot sector (WORD) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_ZeroedEx		11		/* exFAT: MBZ field (53-byte) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_VolOfsEx		64		/* exFAT: Volume offset from top of the drive [sector] (QWORD) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_TotSecEx		72		/* exFAT: Volume size [sector] (QWORD) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_FatOfsEx		80		/* exFAT: FAT offset from top of the volume [sector] (DWORD) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_FatSzEx			84		/* exFAT: FAT size [sector] (DWORD) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_DataOfsEx		88		/* exFAT: Data offset from top of the volume [sector] (DWORD) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_NumClusEx		92		/* exFAT: Number of clusters (DWORD) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_RootClusEx		96		/* exFAT: Root directory start cluster (DWORD) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_VolIDEx			100		/* exFAT: Volume serial number (DWORD) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_FSVerEx			104		/* exFAT: File system version (WORD) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_VolFlagEx		106		/* exFAT: Volume flags (BYTE) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_ActFatEx		107		/* exFAT: Active FAT flags (BYTE) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_BytsPerSecEx	108		/* exFAT: Log2 of sector size in unit of byte (BYTE) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_SecPerClusEx	109		/* exFAT: Log2 of cluster size in unit of sector (BYTE) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_NumFATsEx		110		/* exFAT: Number of FATs (BYTE) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_DrvNumEx		111		/* exFAT: Physical drive number for int13h (BYTE) */
+Ff.c (middlewares\third_party\fatfs\src):#define BPB_PercInUseEx		112		/* exFAT: Percent in use (BYTE) */
+Ff.c (middlewares\third_party\fatfs\src):#define	BPB_RsvdEx			113		/* exFAT: Reserved (7-byte) */
+Ff.c (middlewares\third_party\fatfs\src):	/* Following code attempts to mount the volume. (analyze BPB and initialize the fs object) */
+Ff.c (middlewares\third_party\fatfs\src):		for (i = BPB_ZeroedEx; i < BPB_ZeroedEx + 53 && fs->win[i] == 0; i++) ;	/* Check zero filler */
+Ff.c (middlewares\third_party\fatfs\src):		if (i < BPB_ZeroedEx + 53) return FR_NO_FILESYSTEM;
+Ff.c (middlewares\third_party\fatfs\src):		if (ld_word(fs->win + BPB_FSVerEx) != 0x100) return FR_NO_FILESYSTEM;	/* Check exFAT revision (Must be 1.0) */
+Ff.c (middlewares\third_party\fatfs\src):		if (1 << fs->win[BPB_BytsPerSecEx] != SS(fs)) {	/* (BPB_BytsPerSecEx must be equal to the physical sector size) */
+Ff.c (middlewares\third_party\fatfs\src):		maxlba = ld_qword(fs->win + BPB_TotSecEx) + bsect;	/* Last LBA + 1 of the volume */
+Ff.c (middlewares\third_party\fatfs\src):		fs->fsize = ld_dword(fs->win + BPB_FatSzEx);	/* Number of sectors per FAT */
+Ff.c (middlewares\third_party\fatfs\src):		fs->n_fats = fs->win[BPB_NumFATsEx];			/* Number of FATs */
+Ff.c (middlewares\third_party\fatfs\src):		fs->csize = 1 << fs->win[BPB_SecPerClusEx];		/* Cluster size */
+Ff.c (middlewares\third_party\fatfs\src):		nclst = ld_dword(fs->win + BPB_NumClusEx);		/* Number of clusters */
+Ff.c (middlewares\third_party\fatfs\src):		fs->database = bsect + ld_dword(fs->win + BPB_DataOfsEx);
+Ff.c (middlewares\third_party\fatfs\src):		fs->fatbase = bsect + ld_dword(fs->win + BPB_FatOfsEx);
+Ff.c (middlewares\third_party\fatfs\src):		fs->dirbase = ld_dword(fs->win + BPB_RootClusEx);
+Ff.c (middlewares\third_party\fatfs\src):		if (ld_word(fs->win + BPB_BytsPerSec) != SS(fs)) return FR_NO_FILESYSTEM;	/* (BPB_BytsPerSec must be equal to the physical sector size) */
+Ff.c (middlewares\third_party\fatfs\src):		fasize = ld_word(fs->win + BPB_FATSz16);		/* Number of sectors per FAT */
+Ff.c (middlewares\third_party\fatfs\src):		if (fasize == 0) fasize = ld_dword(fs->win + BPB_FATSz32);
+Ff.c (middlewares\third_party\fatfs\src):		fs->n_fats = fs->win[BPB_NumFATs];				/* Number of FATs */
+Ff.c (middlewares\third_party\fatfs\src):		fs->csize = fs->win[BPB_SecPerClus];			/* Cluster size */
+Ff.c (middlewares\third_party\fatfs\src):		fs->n_rootdir = ld_word(fs->win + BPB_RootEntCnt);	/* Number of root directory entries */
+Ff.c (middlewares\third_party\fatfs\src):		tsect = ld_word(fs->win + BPB_TotSec16);		/* Number of sectors on the volume */
+Ff.c (middlewares\third_party\fatfs\src):		if (tsect == 0) tsect = ld_dword(fs->win + BPB_TotSec32);
+Ff.c (middlewares\third_party\fatfs\src):		nrsv = ld_word(fs->win + BPB_RsvdSecCnt);		/* Number of reserved sectors */
+Ff.c (middlewares\third_party\fatfs\src):			if (ld_word(fs->win + BPB_FSVer32) != 0) return FR_NO_FILESYSTEM;	/* (Must be FAT32 revision 0.0) */
+Ff.c (middlewares\third_party\fatfs\src):			if (fs->n_rootdir) return FR_NO_FILESYSTEM;	/* (BPB_RootEntCnt must be 0) */
+Ff.c (middlewares\third_party\fatfs\src):			fs->dirbase = ld_dword(fs->win + BPB_RootClus32);	/* Root directory start cluster */
+Ff.c (middlewares\third_party\fatfs\src):			if (fs->n_rootdir == 0)	return FR_NO_FILESYSTEM;/* (BPB_RootEntCnt must not be 0) */
+Ff.c (middlewares\third_party\fatfs\src):		if (fs->fsize < (szbfat + (SS(fs) - 1)) / SS(fs)) return FR_NO_FILESYSTEM;	/* (BPB_FATSz must not be less than the size needed) */
+Ff.c (middlewares\third_party\fatfs\src):		if (fmt == FS_FAT32				/* Enable FSINFO only if FAT32 and BPB_FSInfo32 == 1 */
+Ff.c (middlewares\third_party\fatfs\src):			&& ld_word(fs->win + BPB_FSInfo32) == 1
+Ff.c (middlewares\third_party\fatfs\src):				di = BPB_VolIDEx; break;
+Ff.c (middlewares\third_party\fatfs\src):			st_dword(buf + BPB_VolOfsEx, b_vol);					/* Volume offset in the physical drive [sector] */
+Ff.c (middlewares\third_party\fatfs\src):			st_dword(buf + BPB_TotSecEx, sz_vol);					/* Volume size [sector] */
+Ff.c (middlewares\third_party\fatfs\src):			st_dword(buf + BPB_FatOfsEx, b_fat - b_vol);			/* FAT offset [sector] */
+Ff.c (middlewares\third_party\fatfs\src):			st_dword(buf + BPB_FatSzEx, sz_fat);					/* FAT size [sector] */
+Ff.c (middlewares\third_party\fatfs\src):			st_dword(buf + BPB_DataOfsEx, b_data - b_vol);			/* Data offset [sector] */
+Ff.c (middlewares\third_party\fatfs\src):			st_dword(buf + BPB_NumClusEx, n_clst);					/* Number of clusters */
+Ff.c (middlewares\third_party\fatfs\src):			st_dword(buf + BPB_RootClusEx, 2 + tbl[0] + tbl[1]);	/* Root dir cluster # */
+Ff.c (middlewares\third_party\fatfs\src):			st_dword(buf + BPB_VolIDEx, GET_FATTIME());				/* VSN */
+Ff.c (middlewares\third_party\fatfs\src):			st_word(buf + BPB_FSVerEx, 0x100);						/* File system version (1.00) */
+Ff.c (middlewares\third_party\fatfs\src):			for (buf[BPB_BytsPerSecEx] = 0, i = ss; i >>= 1; buf[BPB_BytsPerSecEx]++) ;	/* Log2 of sector size [byte] */
+Ff.c (middlewares\third_party\fatfs\src):			for (buf[BPB_SecPerClusEx] = 0, i = au; i >>= 1; buf[BPB_SecPerClusEx]++) ;	/* Log2 of cluster size [sector] */
+Ff.c (middlewares\third_party\fatfs\src):			buf[BPB_NumFATsEx] = 1;					/* Number of FATs */
+Ff.c (middlewares\third_party\fatfs\src):			buf[BPB_DrvNumEx] = 0x80;				/* Drive number (for int13) */
+Ff.c (middlewares\third_party\fatfs\src):				if (i != BPB_VolFlagEx && i != BPB_VolFlagEx + 1 && i != BPB_PercInUseEx) sum = xsum32(buf[i], sum);
+Ff.c (middlewares\third_party\fatfs\src):		st_word(buf + BPB_BytsPerSec, ss);				/* Sector size [byte] */
+Ff.c (middlewares\third_party\fatfs\src):		buf[BPB_SecPerClus] = (BYTE)pau;				/* Cluster size [sector] */
+Ff.c (middlewares\third_party\fatfs\src):		st_word(buf + BPB_RsvdSecCnt, (WORD)sz_rsv);	/* Size of reserved area */
+Ff.c (middlewares\third_party\fatfs\src):		buf[BPB_NumFATs] = (BYTE)n_fats;				/* Number of FATs */
+Ff.c (middlewares\third_party\fatfs\src):		st_word(buf + BPB_RootEntCnt, (WORD)((fmt == FS_FAT32) ? 0 : n_rootdir));	/* Number of root directory entries */
+Ff.c (middlewares\third_party\fatfs\src):			st_word(buf + BPB_TotSec16, (WORD)sz_vol);	/* Volume size in 16-bit LBA */
+Ff.c (middlewares\third_party\fatfs\src):			st_dword(buf + BPB_TotSec32, sz_vol);		/* Volume size in 32-bit LBA */
+Ff.c (middlewares\third_party\fatfs\src):		buf[BPB_Media] = 0xF8;							/* Media descriptor byte */
+Ff.c (middlewares\third_party\fatfs\src):		st_word(buf + BPB_SecPerTrk, 63);				/* Number of sectors per track (for int13) */
+Ff.c (middlewares\third_party\fatfs\src):		st_word(buf + BPB_NumHeads, 255);				/* Number of heads (for int13) */
+Ff.c (middlewares\third_party\fatfs\src):		st_dword(buf + BPB_HiddSec, b_vol);				/* Volume offset in the physical drive [sector] */
+Ff.c (middlewares\third_party\fatfs\src):			st_dword(buf + BPB_FATSz32, sz_fat);		/* FAT size [sector] */
+Ff.c (middlewares\third_party\fatfs\src):			st_dword(buf + BPB_RootClus32, 2);			/* Root directory cluster # (2) */
+Ff.c (middlewares\third_party\fatfs\src):			st_word(buf + BPB_FSInfo32, 1);				/* Offset of FSINFO sector (VBR + 1) */
+Ff.c (middlewares\third_party\fatfs\src):			st_word(buf + BPB_BkBootSec32, 6);			/* Offset of backup VBR (VBR + 6) */
+Ff.c (middlewares\third_party\fatfs\src):			st_word(buf + BPB_FATSz16, (WORD)sz_fat);	/* FAT size [sector] */

@@ -100,7 +100,7 @@ int main(void)
   MX_GPIO_Init();
   MX_UART4_Init();
   MX_SPI1_Init();
-  //MX_FATFS_Init();
+  MX_FATFS_Init();
   
   /* USER CODE BEGIN 2 */
   EN25QXX_Init();
@@ -108,6 +108,9 @@ int main(void)
   /* USER CODE END 2 */
 
   /* Infinite loop */
+
+  //ripple test flash read write.
+  /*
   EN25QXX_Write("ripple wang flash test...",0,strlen("ripple wang flash test..."));
   uint8_t  buff[30];
   memset(buff, 0, 30);
@@ -124,6 +127,8 @@ int main(void)
   printf("buff[2]= %x\r\n", buff[2]);
   printf("buff[3]= %x\r\n", buff[3]);
   printf("buff[4]= %x\r\n", buff[4]);
+  */
+
   
 
   while (1)

@@ -922,6 +922,10 @@ FRESULT move_window (	/* Returns FR_OK or FR_DISK_ERROR */
 		res = sync_window(fs);		/* Write-back changes */
 #endif
 		if (res == FR_OK) {			/* Fill sector window with new data */
+                    /*ripple study, 从这里可以看出, 一个sector的大小设置的是512个byte
+                    disk_read函数 是按照扇区来读写的， 大小设置的是512个byte
+                    fs->win是disk_read的buff缓冲区，所以  fs->win 窗口的作用也就是作为
+                     缓冲区用的， 大小是一个sector, 512 byte*/
 			if (disk_read(fs->drv, fs->win, sector, 1) != RES_OK) {
 				sector = 0xFFFFFFFF;	/* Invalidate window if data is not reliable */
 				res = FR_DISK_ERR;
@@ -3283,6 +3287,7 @@ FRESULT f_mount (
 
 	if (!fs || opt != 1) return FR_OK;	/* Do not mount now, it will be mounted later */
 
+       /*ripple study, find_volume  is mount function??*/
 	res = find_volume(&path, &fs, 0);	/* Force mounted the volume */
 	LEAVE_FF(fs, res);
 }

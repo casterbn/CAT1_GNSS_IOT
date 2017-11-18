@@ -71,6 +71,7 @@
 /* Private variables ---------------------------------------------------------*/
 /* Disk status */
 static volatile DSTATUS Stat = STA_NOINIT;
+#define FLASH_SECTOR_SIZE 	512			  
 
 /* USER CODE END DECL */
 
@@ -109,10 +110,23 @@ DSTATUS USER_initialize (
 	BYTE pdrv           /* Physical drive nmuber to identify the drive */
 )
 {
-  /* USER CODE BEGIN INIT */
-    Stat = STA_NOINIT;
-    return Stat;
-  /* USER CODE END INIT */
+  u8 res=0;       
+  Stat = STA_NOINIT;
+  switch(pdrv)
+  {
+      case 0://SD卡
+          //Stat=SD_Init();   //ripple, used for  SD card
+          break;
+      case 1://外部flash
+          EN25QXX_Init();
+          //FLASH_SECTOR_COUNT=2048*12;//W25Q1218,前12M字节给FATFS占用 
+          break;
+      default:
+          Stat = STA_NOINIT; 
+  }        
+  if(Stat)return  STA_NOINIT;
+  else return 0; //初始化成功
+
 }
  
 /**
@@ -145,10 +159,36 @@ DRESULT USER_read (
 	UINT count      /* Number of sectors to read */
 )
 {
-  /* USER CODE BEGIN READ */
-    return RES_OK;
-  /* USER CODE END READ */
+    u8 res=0; 
+    if (!count)return RES_PARERR;//count不能等于0，否则返回参数错误          
+    switch(pdrv)
+    {
+        case 0://SD卡
+            /*res=SD_ReadDisk(buff,sector,count);  
+            while(res)//读出错
+            {
+                SD_Init();  //重新初始化SD卡
+                res=SD_ReadDisk(buff,sector,count); 
+                //printf("sd rd error:%d\r\n",res);
+            }
+             */
+            break;
+        case 1://外部flash
+            for(;count>0;count--)
+            {
+                EN25QXX_Read(buff,sector*FLASH_SECTOR_SIZE,FLASH_SECTOR_SIZE);
+                sector++;
+                buff+=FLASH_SECTOR_SIZE;
+            }
+            res=0;
+            break;
+        default:
+            res=1; 
+    }
+    if(res==0x00)return RES_OK;  
+    else return RES_ERROR;     
 }
+
 
 /**
   * @brief  Writes Sector(s)  
@@ -165,12 +205,37 @@ DRESULT USER_write (
 	DWORD sector,       /* Sector address in LBA */
 	UINT count          /* Number of sectors to write */
 )
-{ 
-  /* USER CODE BEGIN WRITE */
-  /* USER CODE HERE */
-    return RES_OK;
-  /* USER CODE END WRITE */
+{
+    u8 res=0;  
+    if (!count)return RES_PARERR;//count不能等于0，否则返回参数错误          
+    switch(pdrv)
+    {
+        case 0://SD卡
+            /*res=SD_WriteDisk((u8*)buff,sector,count);
+            while(res)//写出错
+            {
+                SD_Init();  //重新初始化SD卡
+                res=SD_WriteDisk((u8*)buff,sector,count);   
+                //printf("sd wr error:%d\r\n",res);
+            }*/
+            break;
+        case 1://外部flash
+            for(;count>0;count--)
+            {                                           
+                EN25QXX_Write((u8*)buff,sector*FLASH_SECTOR_SIZE,FLASH_SECTOR_SIZE);
+                sector++;
+                buff+=FLASH_SECTOR_SIZE;
+            }
+            res=0;
+            break;
+        default:
+            res=1; 
+    }
+    //处理返回值，将SPI_SD_driver.c的返回值转成ff.c的返回值
+    if(res == 0x00)return RES_OK;    
+    else return RES_ERROR;  
 }
+
 #endif /* _USE_WRITE == 1 */
 
 /**
